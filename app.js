@@ -4,15 +4,15 @@ const ul = document.querySelector("ul")
 const item = document.getElementsByTagName("li")
 
 
-function inputLenght(){
+function inputLenght() {
     return input.value.length
 }
 
-function listItem(){
+function listItem() {
     return item.length
 }
 
-function createListItem(){
+function createListItem() {
     var li = document.createElement("li") //create an element li
     li.appendChild(document.createTextNode(input.value)) //make text form input field the li text
     ul.appendChild(li) //add li to ul
@@ -21,7 +21,7 @@ function createListItem(){
     //start striketgrough
     //beacause it's in the function, it only adds it for new items
 
-    function crossOut(){
+    function crossOut() {
         li.classList.toggle("done")
     }
 
@@ -40,7 +40,7 @@ function createListItem(){
 
     //add class delete on li
 
-    function delListItem(){
+    function delListItem() {
         li.classList.add("delete")
     }
     //end add class delete
@@ -49,14 +49,14 @@ function createListItem(){
 }
 
 
-function addListAfterClick(){
-    if(inputLenght() > 0){
+function addListAfterClick() {
+    if (inputLenght() > 0) {
         createListItem()
     }
 }
 
-function addListAfterKeyPress(event){
-    if(inputLenght() > 0 && event.which === 13){
+function addListAfterKeyPress(event) {
+    if (inputLenght() > 0 && event.which === 13) {
         createListItem()
     }
 }
@@ -64,37 +64,21 @@ function addListAfterKeyPress(event){
 enterButton.addEventListener("click", addListAfterClick)
 input.addEventListener("keypress", addListAfterKeyPress)
 
-//Create Search bar filter function 
+// create search bar function
 
-//     const searchBarFilter = document.getElementById("searchBar").value.toUpperCase()   
-//     const userData = document.getElementById("uList")
-//     const showSerData = userData.getElementsByTagName("li")//[0].innerText
-//     const textValue = userData.getElementsByTagName("li")[0]//.innerText
-    
-
-// function searchFilter(){
-//    for(var i = 0; i<showSerData.length;i++){
-//        if(showSerData[i].innerText.toUpperCase().indexOf(searchBarFilter) > -1){
-//             showSerData[i].style.display="Block"
-//        }else{
-//            showSerData[i].style.display = "none"
-//        }
-//    }
-// }
-
-function filter(){
-    var filterValue, input, ul,li,i
-    input = document.getElementById("searchBar") 
+function filter() {
+    var filterValue, input, ul, li, i
+    input = document.getElementById("searchBar")
     filterValue = input.value.toUpperCase()
     ul = document.getElementById("uList")
     li = ul.getElementsByTagName("li")
 
-    for(i = 0; i<li.length;i++ ){
+    for (i = 0; i < li.length; i++) {
         var a = li[i].innerText
-        if(a.toUpperCase().indexOf(filterValue)>-1){
-            li[i].style.display=""
-        }else{
-            li[i].style.display="none"
+        if (a.toUpperCase().indexOf(filterValue) > -1) {
+            li[i].style.display = ""
+        } else {
+            li[i].style.display = "none"
         }
     }
 }
