@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    background-color: #990033;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.heading-div{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.main-heading{
+    width: 100%;
+    flex: 1;
+    display: flex;            
+}
+
+.main-heading h1{
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.sub-heading1{
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.sub-heading1 p {
+    margin: auto;
+}
+
+.sub-heading2{
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.sub-heading2 p {
+    margin: auto;
+}
+
+.sub-heading3{
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+.sub-heading3 p {
+    margin: auto;
+}
+
+.sub-heading4{
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+.sub-heading4 input {
+    margin: auto;
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    
+}
+
+
+
+.input-div{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-div input {
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.input-div button{
+    width: 10%;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.done{
+    background-color: wheat;
+    color:black;
+    opacity: .8;
+}
+
+.delete{
+    display: none;
+}
+
+ .unoder-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unoder-list li{
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.unoder-list li button{
+    color:whitesmoke;
+    opacity: .8;
+    background-color: transparent; 
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    align-content: flex-end;   
+    
+}

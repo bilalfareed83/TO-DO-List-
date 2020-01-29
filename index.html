@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-div">
+            <div class="main-heading">
+                <h1>Work to-dos</h1>
+            </div>
+            <div class="sub-heading1">
+                <p>Enter text into the input field to add items to your list.</p>
+            </div>
+            <div class="sub-heading2">
+                <p>Click the item to mark it as complete.</p>
+            </div>
+            <div class="sub-heading3">
+                <p>Click the "X" to remove the item from your list.</p>
+            </div>
+            <!-- <div class="sub-heading4">
+                <input type="text" id="searchBar" placeholder="Search Item..">
+            </div> -->
+
+        </div>
+        <div class="input-div">
+            <input type="text" id="userinput" maxlength="27" placeholder="New item..." onkeyup="searchFilter()">
+            <button id="enter">add</button>
+        </div>
+
+        <div class="unoder-div">
+            <ul class="unoder-list" id="uList"></ul>
+        </div>
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>
