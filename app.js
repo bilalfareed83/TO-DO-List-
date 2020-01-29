@@ -64,7 +64,7 @@ function addListAfterKeyPress(event){
 enterButton.addEventListener("click", addListAfterClick)
 input.addEventListener("keypress", addListAfterKeyPress)
 
-// Create Search bar filter function 
+//Create Search bar filter function 
 
 //     const searchBarFilter = document.getElementById("searchBar").value.toUpperCase()   
 //     const userData = document.getElementById("uList")
@@ -82,4 +82,21 @@ input.addEventListener("keypress", addListAfterKeyPress)
 //    }
 // }
 
-// console.log(searchBarFilter)
+function filter(){
+    var filterValue, input, ul,li,i
+    input = document.getElementById("searchBar") 
+    filterValue = input.value.toUpperCase()
+    ul = document.getElementById("uList")
+    li = ul.getElementsByTagName("li")
+
+    for(i = 0; i<li.length;i++ ){
+        var a = li[i].innerText
+        if(a.toUpperCase().indexOf(filterValue)>-1){
+            li[i].style.display=""
+        }else{
+            li[i].style.display="none"
+        }
+    }
+}
+
+
